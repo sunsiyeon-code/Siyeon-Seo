@@ -7,8 +7,8 @@ const Portfolio: React.FC = () => {
     {
       id: 'ai-edu',
       category: 'AI & Education',
-      title: '미래 지능형 평생학습 기획',
-      description: 'AI 툴 활용 콘텐츠 제작, 챗봇을 활용한 마을 정보 안내 시스템, 중장년층 디지털 리터러시 교육 기획.',
+      title: '바이크 코딩 평생학습마을 프로그램 기획',
+      description: 'AI 툴 활용 콘텐츠 제작, 중장년층 디지털 리터러시 교육 기획.',
       tags: ['Generative AI', 'Lifelong Learning', 'Digital Design'],
       icon: <BrainCircuit className="w-10 h-10 text-brand-pink" />,
       color: 'from-pink-500/20 to-purple-500/10'
@@ -17,7 +17,7 @@ const Portfolio: React.FC = () => {
       id: 'fest-comm',
       category: 'Festival & Community',
       title: '감일 지구 대표 지역 축제 운영',
-      description: '클럽감일맘 주관 대규모 플리마켓, 지역 아티스트 협업 공연, 아파트 공동체 화합 프로그램 운영.',
+      description: '클럽감일맘 주관 대규모 플리마켓, 지역주민에게 열린 공연, 아파트 공동체 화합 프로그램 운영.',
       tags: ['Festival Design', 'Market Operation', 'Collaborative Art'],
       icon: <Palette className="w-10 h-10 text-brand-orange" />,
       color: 'from-orange-500/20 to-red-500/10'
@@ -30,7 +30,7 @@ const Portfolio: React.FC = () => {
         <div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Main Streams</h2>
           <p className="text-white/40 text-lg max-w-xl">
-            지역 공동체와 기술의 융합이 만드는 새로운 문화적 흐름입니다.
+            지역 공동체와 문화가 만드는 새로운 플랫폼입니다.
           </p>
         </div>
       </div>

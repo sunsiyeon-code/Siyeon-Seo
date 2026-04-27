@@ -28,7 +28,7 @@ const Profile: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 px-4 max-w-6xl mx-auto">
+    <section id="profile" className="py-32 px-4 max-w-6xl mx-auto">
       <div className="text-center mb-20">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">Core Track</h2>
         <div className="h-1 w-20 bg-gradient-to-r from-brand-pink to-brand-orange mx-auto rounded-full" />

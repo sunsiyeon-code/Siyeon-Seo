@@ -3,18 +3,45 @@ import { motion } from 'motion/react';
 import { MousePointer2, Sparkles } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="relative min-h-screen flex flex-col px-12 overflow-hidden">
+    <section id="overview" className="relative min-h-screen flex flex-col px-12 overflow-hidden">
       {/* Navigation Injected into Hero Top */}
       <nav className="z-20 w-full flex justify-between items-center py-8">
-        <div className="text-2xl font-bold tracking-tighter">
+        <div className="text-2xl font-bold tracking-tighter cursor-pointer" onClick={() => scrollTo('overview')}>
           SEO <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink to-brand-orange">SIYEON</span>
         </div>
         <div className="hidden md:flex gap-8 text-sm font-medium tracking-widest text-white/60 uppercase">
-          <span className="text-white border-b-2 border-brand-pink pb-1">Overview</span>
-          <span className="hover:text-white cursor-pointer transition-colors">Profile</span>
-          <span className="hover:text-white cursor-pointer transition-colors">Portfolio</span>
-          <span className="hover:text-white cursor-pointer transition-colors">Contact</span>
+          <span 
+            className="text-white border-b-2 border-brand-pink pb-1 cursor-pointer"
+            onClick={() => scrollTo('overview')}
+          >
+            Overview
+          </span>
+          <span 
+            className="hover:text-white cursor-pointer transition-colors"
+            onClick={() => scrollTo('profile')}
+          >
+            Profile
+          </span>
+          <span 
+            className="hover:text-white cursor-pointer transition-colors"
+            onClick={() => scrollTo('portfolio')}
+          >
+            Portfolio
+          </span>
+          <span 
+            className="hover:text-white cursor-pointer transition-colors"
+            onClick={() => scrollTo('contact')}
+          >
+            Contact
+          </span>
         </div>
       </nav>
 
@@ -37,12 +64,12 @@ const Hero: React.FC = () => {
           <h1 className="text-6xl md:text-[90px] font-black mb-8 tracking-tighter leading-[0.95]">
             기술과 공동체,<br />
             <span className="gradient-text">문화를 디자인하는</span><br />
-            기획자 <span className="text-white">서시연</span>
+            기획자 <span className="text-white">SEO</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
             평생학습마을과 지역 공동체 축제를 통해<br />
-            사람과 기술이 만나는 예술적인 흐름을 창조합니다.
+            인간의 삶과 공동체에 문화라는 색을 더합니다.
           </p>
 
           <motion.div

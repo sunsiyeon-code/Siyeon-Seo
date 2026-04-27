@@ -4,7 +4,7 @@ import { Mail, Instagram, Linkedin, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-20 px-4 border-t border-white/10 relative overflow-hidden">
+    <footer id="contact" className="py-20 px-4 border-t border-white/10 relative overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-black mb-2 tracking-tighter">SEO SIYEON</h2>
